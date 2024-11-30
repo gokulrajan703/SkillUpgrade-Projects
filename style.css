@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4c60;
+}
+
+.buy-btn {
+    background-color: #ff4c60;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e04154;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    text-align: left;
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+    min-height: 100wh;
+    position: relative;
+}
+
+.hero-content {
+    grid-row: 1;
+    max-width: 50%;
+}
+
+.welcome {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.highlight {
+    color: #ff4c60;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.social-icons,
+.skills {
+    margin-top: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+.icons img:hover{
+    transform:scale(1,1);
+}
+.icons a {
+    margin-right: 10px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+/* Hero Image */
+.hero-image{
+    grid-row: 1;
+    max-width: 50%;
+    justify-self: end;
+}
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.bottom-section {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bottom-section .social-icons,
+.bottom-section .skills {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+       display: none;
+    }
+    .bottom-section{
+        margin-top:30px;
+    }
+}
